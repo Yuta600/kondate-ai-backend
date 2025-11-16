@@ -27,6 +27,13 @@ ChatGPT APIを活用した献立・買い物リスト自動生成アプリ
 - ✅ IntelliJ開発環境設定
     - 自動ビルド有効化
     - 自動インポート設定
+- ✅ **献立生成API - 入力受付機能実装**
+    - MenuRequest DTO作成(家族構成、予算、郵便番号、スーパー名)
+    - MenuController作成(@RestController, POST /api/menu/generate)
+    - バリデーション実装(@Min, @Max, @NotBlank + カスタムチェック)
+    - 例外ハンドリング実装(BadRequestException + GlobalExceptionHandler)
+    - ErrorResponse DTO作成
+    - Postmanでテスト確認済み
 
 ## MVP仕様
 - 入力: 家族構成、予算、地域、スーパー名
@@ -35,8 +42,9 @@ ChatGPT APIを活用した献立・買い物リスト自動生成アプリ
 - DB・認証機能は後回し
 
 ## 次のタスク
-- [ ] フロントからのリクエストを受け取るコントローラー作成
-- [ ] ChatGPT API連携
+- [ ] MenuResponse DTO作成
+- [ ] AiServiceインターフェース作成
+- [ ] ChatGPT API連携(またはダミー実装)
 - [ ] レスポンスデータ整形
 
 ## 注意事項
