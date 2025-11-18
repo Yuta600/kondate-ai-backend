@@ -1,4 +1,4 @@
-package com.github.yuta600.kondateai.dto;
+package com.github.yuta600.kondateai.dto.request;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;

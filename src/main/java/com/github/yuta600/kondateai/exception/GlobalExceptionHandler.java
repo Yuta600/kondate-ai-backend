@@ -1,6 +1,6 @@
 package com.github.yuta600.kondateai.exception;
 
-import com.github.yuta600.kondateai.dto.ErrorResponse;
+import com.github.yuta600.kondateai.dto.response.ErrorResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

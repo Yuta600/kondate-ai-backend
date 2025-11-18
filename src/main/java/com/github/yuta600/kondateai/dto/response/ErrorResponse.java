@@ -1,4 +1,4 @@
-package com.github.yuta600.kondateai.dto;
+package com.github.yuta600.kondateai.dto.response;
 
 import lombok.Data;
 
