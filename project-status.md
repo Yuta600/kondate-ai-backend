@@ -34,18 +34,28 @@ ChatGPT APIを活用した献立・買い物リスト自動生成アプリ
     - 例外ハンドリング実装(BadRequestException + GlobalExceptionHandler)
     - ErrorResponse DTO作成
     - Postmanでテスト確認済み
+- ✅ MenuResponse(出力DTO)作成
+    - 複数献立対応(DailyMenuのネスト構造)
+    - 買い物リスト機能
+    - 将来拡張を考慮した設計(recipeUrl)
+- ✅ コントローラー修正
+    - ダミーデータで3日分の献立生成
+    - 動作確認完了(Postman)
 
 ## MVP仕様
 - 入力: 家族構成、予算、地域、スーパー名
-- 処理: ChatGPT APIで献立生成
-- 出力: 献立タイトル、材料、材料費、買い物メモ
-- DB・認証機能は後回し
+- 処理: ChatGPT APIで**複数日分の献立**生成
+- 出力:
+    - 各日の献立(タイトル、材料、材料費)
+    - 統合買い物リスト
+    - 合計金額
+- Phase 2: 調理手順(レシピURL)、買い物リスト統合
 
 ## 次のタスク
-- [ ] MenuResponse DTO作成
+- [ ] OpenAI APIキー取得
 - [ ] AiServiceインターフェース作成
-- [ ] ChatGPT API連携(またはダミー実装)
-- [ ] レスポンスデータ整形
+- [ ] ChatGPT API連携実装
+- [ ] (オプション) CORS設定・フロント連携
 
 ## 注意事項
 - OpenAI APIキー: 未取得(今後必要)
