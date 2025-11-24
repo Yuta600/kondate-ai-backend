@@ -1,4 +1,4 @@
-package com.github.yuta600.kondateai;
+package com.github.yuta600.kondateai.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
